@@ -1,0 +1,30 @@
+﻿生成启动时间为 2017/10/10 9:45:31。
+     1>项目“E:\Code_AIDE\VS2010_code\SouiSet\SouiSet\SouiSet.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\SouiSet.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         所有输出均为最新。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\SouiSet.res" SouiSet.rc 
+       Link:
+         D:\VS2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Code_AIDE\VS2010_code\SouiSet\Debug\SouiSet.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\soui2010\soui-master\bin" utilitiesd.lib souid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\SouiSet.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Code_AIDE\VS2010_code\SouiSet\Debug\SouiSet.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Code_AIDE\VS2010_code\SouiSet\Debug\SouiSet.lib" /MACHINE:X86 Debug\SouiSet.res
+         Debug\Config.obj
+         Debug\MainDlg.obj
+         Debug\SouiSet.obj
+         Debug\stdafx.obj
+         SouiSet.vcxproj -> E:\Code_AIDE\VS2010_code\SouiSet\Debug\SouiSet.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"E:\Code_AIDE\VS2010_code\SouiSet\Debug\SouiSet.exe.manifest" /manifest Debug\SouiSet.exe.intermediate.manifest
+       BscMake:
+         所有输出均为最新。
+       FinalizeBuildStatus:
+         正在删除文件“Debug\SouiSet.unsuccessfulbuild”。
+         正在对“Debug\SouiSet.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\Code_AIDE\VS2010_code\SouiSet\SouiSet\SouiSet.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.35

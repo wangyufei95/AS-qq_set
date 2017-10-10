@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<include width="788" height="500">
+  <tabctrl pos="0,0,-0,-0" font="style:StrokeAndFill,blurStyle:solid,blurRadius:3" animateSteps="10" animateType="1" tabAlign="left" tabInterSkin="skin_tab_left_splitter" tabInterSize="2" tabWidth="92" icon-x="5" icon-y="8" colorText="#000000bb">
+
+    <page title="个人资料" tip="Person information">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">个人资料：</text>
+      <text pos="[2,[10" font="face:微软雅黑" colorText="#000000">您可以设置谁可以查看您的个人资料</text>
+      <button name="btn_name11" pos="{,[8,@88,@28">权限设置</button>
+    </page>
+    <page title="空间权限" tip="Space permissions">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">空间权限：</text>
+      <text pos="[2,[10" font="face:微软雅黑" colorText="#000000">请选择QQ空间访问范围：</text>
+      <combobox name="cbx_name5" size="150, 24" dropDown="1" dropHeight="150" dotted="0" animateTime="200" drawFocusRect="0" colorText="#000000ff" pos="[6,{">
+        <liststyle itemHeight="24" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#228B22" colorItemSelBkgnd="#000088" />
+        <editstyle inset="5,0,5,0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+        <items>
+          <item id="0" text="对所有人可见" data="100" />
+          <item id="1" text="对部分人可见" data="103" />
+          <item id="2" text="仅对自己可见" data="106" />
+        </items>
+      </combobox>
+      <text pos="102,[10" font="face:微软雅黑" colorText="#FF0000">此项设置需要去QQ空间查看修改：</text>
+      <link pos="[1,{" maxWidth="100" colorText="#5F9EA0" class="cls_btn_weblink" dotted="1" href="www.leke.cn">立即查看</link>
+      <check pos="102,[10" name="check_box42" colorText="#000000" font="face:微软雅黑">将您QQ的最新日志、最新照片等显示在QQ上</check>
+      <check pos="{,[10" name="check_box43" colorText="#000000" font="face:微软雅黑">更新说说时同步更新QQ签名</check>
+      <check pos="{,[10" name="check_box44" colorText="#000000" font="face:微软雅黑">您的日志被转载，用QQ消息提醒通知您</check>
+      <check pos="{,[10" name="check_box45" colorText="#000000" font="face:微软雅黑">您的空间有了新留言或评论等，用QQ消息通知您</check>
+      <check pos="{,[10" name="check_box46" colorText="#000000" font="face:微软雅黑">在QQ上显示最近玩过的应用</check>
+      <link pos="100,259" maxWidth="100" colorText="#5F9EA0" class="cls_btn_weblink" dotted="1" href="https://qzone.qq.com/">去QQ空间设置更多>></link>
+    </page>
+    <page title="防骚扰" tip="Harassment">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">防骚扰：</text>
+      <text pos="[2,[10" font="face:微软雅黑" colorText="#000000">请选择允许别人查找您的方式：</text>
+
+      <check pos="{,[10" name="check_box47" colorText="#000000" font="face:微软雅黑">通过查找视频用户列表查找我</check>
+      <check pos="{,[10" name="check_box48" colorText="#000000" font="face:微软雅黑">只能通过账号或昵称查找到我</check>
+      <check pos="{,[10" name="check_box49" colorText="#000000" font="face:微软雅黑">不允许推荐给可能认识的人，同时也不向我推荐可能认识的人</check>
+      <text pos="88,170" font="face:微软雅黑" colorText="#000000">请选择适合您的验证方式：</text>
+      <radio name="radio_n24" colorText="#000000" pos="{,[10">允许任何人</radio>
+      <radio name="radio_n25" colorText="#000000" pos="{,[10">需要验证消息</radio>
+      <radio name="radio_n26" colorText="#000000" pos="{,[10">需要正确回答问题</radio>
+      <radio name="radio_n27" colorText="#000000" pos="{,[10">需要正确回答问题并由我确认</radio>
+    </page>
+    <page title="临时会话" tip="Temporary session">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">临时会话：</text>
+      <check pos="[0,[10" name="check_box50" colorText="#000000" font="face:微软雅黑">不接收任何临时会话消息</check>
+      <button name="btn_name12" pos="102,70,@112,@28">屏蔽联系人管理</button>
+      <button name="btn_name13" pos="[13,{,@99,@28">屏蔽会话管理</button>
+    </page>
+    <page title="资讯提醒" tip="Information remind">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">资讯提醒：</text>
+      <check pos="[0,[10" name="check_box51" colorText="#000000" font="face:微软雅黑">登录后显示“腾讯网迷你版”</check>
+    </page>
+    <page title="个人状态" tip="Person status">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">个人状态：</text>
+      <text pos="[2,[6" font="face:微软雅黑" colorText="#000000">您将向好友展示一下选中的信息：</text>
+      <check pos="{,[10" name="check_box52" colorText="#000000" font="face:微软雅黑">我的输入状态</check>
+      <check pos="{,[10" name="check_box53" colorText="#000000" font="face:微软雅黑">我的地理位置及天气</check>
+      <check pos="{,[10" name="check_box54" colorText="#000000" font="face:微软雅黑">我正在播放的QQ音乐</check>
+      <check pos="{,[10" name="check_box55" colorText="#000000" font="face:微软雅黑">我正在玩的QQ游戏</check>
+      <check pos="{,[10" name="check_box56" colorText="#000000" font="face:微软雅黑">我正在玩的其他游戏</check>
+      <check pos="{,[10" name="check_box57" colorText="#000000" font="face:微软雅黑">我正在玩的QQ宠物</check>
+      <check pos="{,[10" name="check_box58" colorText="#000000" font="face:微软雅黑">在QQ上显示我的课程动态</check>
+      <check pos="{,[10" name="check_box59" colorText="#000000" font="face:微软雅黑">我的公益活动更新</check>
+    </page>
+    <page title="远程桌面" tip="Remote desktop">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">远程桌面：</text>
+      <check pos="[0,[10" name="check_box60" colorText="#000000" font="face:微软雅黑">允许远程桌面连接这台计算机</check>
+      <check pos="{,[10" name="check_box61" colorText="#000000" font="face:微软雅黑">自动接受连接请求（建议您手动关闭Windows自动睡眠和自动锁屏的功能）</check>
+    </page>
+  </tabctrl>
+</include>

@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<include>
+  <tabctrl pos="0,0,-0,-0" font="style:StrokeAndFill,blurStyle:solid,blurRadius:3" animateSteps="10" animateType="1" tabAlign="left" tabInterSkin="skin_tab_left_splitter" tabInterSize="2" tabWidth="92" colorText="#000000bb">
+    <page title="登录" tip="login">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">登录：</text>
+      <check pos="[,[" name="check_box0" colorText="#000000" font="face:微软雅黑">开机时自动启动QQ</check>
+      <check pos="{,[5" name="check_box1" colorText="#000000" font="face:微软雅黑">启动QQ时为我自动登录</check>
+      <check pos="{,[5" name="check_box2" colorText="#000000" font="face:微软雅黑">总是打开登录提示</check>
+      <check pos="{,[5" name="check_box3" colorText="#000000" font="face:微软雅黑">离线时自动启动QQ手机版（仅支持Android5.2及以上版本）</check>
+      <check pos="{,[5" name="check_box4" colorText="#000000" font="face:微软雅黑">登录后自动运行QQ宠物</check>
+      <check pos="{,[5" name="check_box5" colorText="#000000" font="face:微软雅黑">订阅“每日精选”，了解最新商品资讯</check>
+    </page>
+    <page title="主面板" tip="The main panel">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">主面板：</text>
+
+      <check pos="[,[0" name="check_box6" colorText="#000000" font="face:微软雅黑">始终保持在其他窗口前端</check>
+      <check pos="{,[5" name="check_box7" colorText="#000000" font="face:微软雅黑">停靠在桌面边缘时自动隐藏</check>
+      <check pos="{,[5" name="check_box8" colorText="#000000" font="face:微软雅黑">在任务栏通知区域显示QQ图标</check>
+      <text pos="{,115" font="face:微软雅黑,adding:0" colorText="#000000">关闭主面板时：</text>
+      <radio name="radio_n0" colorText="#000000" pos="110,138">隐藏到任务栏通知区域，不退出程序</radio>
+      <radio name="radio_n1" colorText="#000000" pos="{,[8">退出程序</radio>
+      <text pos="85,200" font="face:微软雅黑,adding:0" colorText="#000000">您可以自由定制适合您的面板和功能，使用QQ更有效率：</text>
+      <button name="btn_name0" pos="{,232" size="100,30">界面管理器</button>
+    </page>
+    <page title="状态" tip="status">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">状态：</text>
+      <text pos="117,20" font="face:微软雅黑" colorText="#000000">登录状态为：</text>
+      <combobox name="cbx_name0" pos="[10,[0,@120,@20" dropDown="2" dropHeight="200" class="cls_edit" dotted="0" animateTime="200">
+        <liststyle class="cls_edit" itemHeight="30" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#228B22" colorItemSelBkgnd="#000088" />
+        <items>
+          <item id="0" text="隐身" data="100" />
+          <item id="1" text="我在线上" data="103" />
+          <item id="2" text="Q我吧" data="106" />
+          <item id="3" text="离开" data="107" />
+          <item id="4" text="忙碌" data="109" />
+          <item id="5" text="请勿打扰" data="105" />
+        </items>
+      </combobox>
+      <check pos="117,[10" name="check_box9" colorText="#000000" font="face:微软雅黑">运行全屏程序时切换至忙碌状态</check>
+      <text pos="127,[10" font="face:微软雅黑,adding:0" colorText="#A9A9A9">仅在“Q我吧”和“我在线上”状态下生效</text>
+      <check pos="118,[10" name="check_box10" colorText="#000000" font="face:微软雅黑">键盘鼠标无操作</check>
+
+      <!--上下按钮  位置pos是细节-->
+      <window size="75,30" class="cls_edit" trackMouseEvent="1" pos="248,122">
+        <edit pos="5,10,@18,@18" colorBkgnd="#ffffff" name="edit_spin" margin-x="0" margin-y="0" />
+        <spinButton name="spin_btn0" pos="[4,6,@20,@24" max="60" min="0" value="5" buddy="edit_spin">
+          <button name="btn_up" skin="skin_lcex_up" />
+          <button name="btn_down" skin="skin_lcex_down" />
+        </spinButton>
+      </window>
+      <text pos="300,130" font="face:微软雅黑" colorText="#000000">分钟后：</text>
+      <radio name="radio_n2" pos="140,160" colorText="#000000">将自动切换至</radio>
+      <combobox name="cbx_name1" pos="[10,160,@100,@20" dropDown="2" dropHeight="200" class="cls_edit" dotted="0" animateTime="200">
+        <liststyle class="cls_edit" itemHeight="20" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#228B22" colorItemSelBkgnd="#000088" />
+        <items>
+          <item text="离开" data="100" />
+          <item text="忙碌" data="103" />
+        </items>
+      </combobox>
+      <radio name="radio_n3" pos="140,188" colorText="#000000">自动锁定QQ</radio>
+      <check pos="119,216" name="check_box11" colorText="#000000" font="face:微软雅黑">离开、忙碌、请勿打扰自动回复（100字以内）</check>
+      <button name="btn_name1" pos="145,256" size="100,30">自动恢复设置</button>
+      <button name="btn_name2" pos="280,256" size="100,30">快捷回复设置</button>
+    </page>
+
+    <!--// 改到这里了-->
+    <page title="会话窗口" tip="Session window">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">会话窗口：</text>
+      <check pos="120,22" name="check_box12" colorText="#000000" font="face:微软雅黑">使用多彩气泡</check>
+      <check pos="{,[10" name="check_box13" colorText="#000000" font="face:微软雅黑">不显示广告（会员设置项）</check>
+      <check pos="{,[10" name="check_box14" colorText="#000000" font="face:微软雅黑">允许来消息时自动弹出窗口</check>
+      <check pos="{,[10" name="check_box15" colorText="#000000" font="face:微软雅黑">允许自动播放魔法表情和超级表情</check>
+      <check pos="{,[10" name="check_box16" colorText="#000000" font="face:微软雅黑">允许使用QQ秀聊天随动表情</check>
+      <check pos="{,[10" name="check_box17" colorText="#000000" font="face:微软雅黑">总是显示好友聊天窗口侧边栏</check>
+      <check pos="{,[10" name="check_box18" colorText="#000000" font="face:微软雅黑">允许接收窗口抖动</check>
+      <check pos="{,[10" name="check_box19" colorText="#000000" font="face:微软雅黑">允许热词搜索提示</check>
+      <check pos="{,[10" name="check_box20" colorText="#000000" font="face:微软雅黑">显示历史消息记录</check>
+      <check pos="{,[10" name="check_box21" colorText="#000000" font="face:微软雅黑">合并会话窗口</check>
+
+      <button name="btn_name3" pos="275,22" size="99,20">设置多彩气泡</button>
+      <link pos="345,53" maxWidth="100" colorText="#FF0000" class="cls_btn_weblink" dotted="1" href="www.leke.cn">可屏蔽那些广告？</link>
+    </page>
+    <page title="信息展示" tip="Show information">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">信息展示：</text>
+      <check pos="118,22" name="check_box22" colorText="#000000" font="face:微软雅黑">在资料卡和迷你资料卡上显示等级图标</check>
+      <check pos="{,[10" name="check_box23" colorText="#000000" font="face:微软雅黑">在资料卡和迷你资料卡上显示更新摘要</check>
+      <check pos="{,[10" name="check_box24" colorText="#000000" font="face:微软雅黑">在聊天窗口内展示好友的更新摘要</check>
+      <check pos="{,[10" name="check_box25" colorText="#000000" font="face:微软雅黑">在聊天窗口内展示好友互动标识</check>
+    </page>
+    <page title="提醒" tip="Reminding">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">提醒：</text>
+      <check pos="120,21" name="check_box26" colorText="#000000" font="face:微软雅黑">会话消息提醒</check>
+      <check pos="{,[10" name="check_box27" colorText="#000000" font="face:微软雅黑">新邮件提醒</check>
+      <check pos="{,[10" name="check_box28" colorText="#000000" font="face:微软雅黑">安卓设备连接提醒</check>
+      <text pos="130,106" font="face:微软雅黑" colorText="#A9A9A9">当接入安卓设备时，提示安装或更新QQ手机版</text>
+      <text pos="118,130" font="face:微软雅黑" colorText="#000000">您可以设置是否在屏幕右下角收到来自QQ空间的通知：</text>
+      <link pos="490,130" maxWidth="100" colorText="#FF0000" class="cls_btn_weblink" dotted="1" href="www.leke.cn">进入设置</link>
+      <text pos="118,160" font="face:微软雅黑" colorText="#000000">好友上线提醒</text>
+      <radio name="radio_n4" pos="128,190" colorText="#000000">关闭好友上线提醒</radio>
+      <radio name="radio_n5" pos="128,220" colorText="#000000">全部好友上线提醒</radio>
+      <radio name="radio_n6" pos="128,251" colorText="#000000">以下好友上线提醒</radio>
+      <scrollview pos="128,280" colorBkgnd="#ffffff" size="184, 88" viewSize="-1,-1" />
+      <button name="btn_name4" pos="328,280" size="50, 24" colorText="#000000">添加</button>
+    </page>
+    <page title="热键" tip="hotkey">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">热键：</text>
+      <text pos="72,28" font="face:微软雅黑" colorText="#000000">您可以点击选择要更改的热键</text>
+      <button name="btn_name5" pos="72,59" size="80,28" colorText="#000000">设置热键</button>
+    </page>
+    <page title="声音" tip="Sound">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">声音：</text>
+      <check pos="99,21" name="check_box29" colorText="#000000" font="face:微软雅黑">关闭所有声音</check>
+      <button name="btn_name6" pos="98,50" size="80,28" colorText="#000000">设置提示音</button>
+    </page>
+    <page title="软件更新" tip="Software updates">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">软件更新：</text>
+      <text pos="80,40" font="face:微软雅黑" colorText="#000000">您可以选择本台计算机QQ的更新方式</text>
+      <radio name="radio_n7" pos="90,75" colorText="#000000">有更新时自动为我安装(推荐)</radio>
+      <text pos="95,100" font="face:微软雅黑" colorText="#A9A9A9">当QQ有更新时，智能选择最佳的软件更新方案，自动完成更新的下载与安装，省心省力</text>
+      <radio name="radio_n8" pos="90,135" colorText="#000000">有更新时不要安装，但提醒我</radio>
+      <text pos="95,160" font="face:微软雅黑" colorText="#A9A9A9">此方式不影响安全补丁等重要更新的自动安装</text>
+    </page>
+    <page title="文件管理" tip="File management">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">文件管理：</text>
+      <text pos="104,10" font="face:微软雅黑" colorText="#000000">默认把接收到的文件保存到此文件夹中</text>
+      <scrollview pos="104,36" colorBkgnd="#ffffff" size="248,24" viewSize="-1,-1" />
+      <text pos="104,36,@248,@24" colorText="#000000">C:Documents\Tencent Files\1829427725\QQ\Photo\</text>
+      <button name="btn_save_ml" pos="104,76" size="80,28">更改目录</button>
+      <button name="btn_open_file" pos="204,76" size="100,28">打开文件夹</button>
+      <check pos="104,109" name="check_box30" colorText="#000000" font="face:微软雅黑">允许通过秒传发送的文件</check>
+      <text pos="104,135" font="face:微软雅黑" colorText="#A9A9A9">秒传发送的文件，将适用极速服务器辅助接收。能提高文件传输速度，缩短传输时间</text>
+      <text pos="104,162" font="face:微软雅黑" colorText="#000000">选择个人文件夹(用于保存消息记录等数据)的保存位置</text>
+      <radio name="radio_n9" pos="114,190" colorText="#000000">保存到安装目录下（vista、window7或者更高版本的系统不支持此选项）</radio>
+      <radio name="radio_n10" pos="114,218" colorText="#000000">保存到"我的文档"（推荐）</radio>
+      <radio name="radio_n11" pos="114,245" colorText="#000000">自定义</radio>
+      <button name="btn_person" pos="104,272" size="112,28">打开个人文件夹</button>
+      <text pos="104,308" font="face:微软雅黑" colorText="#000000">定期进行文件清理可以有效节省硬盘空间</text>
+      <button pos="380,308" size="92,28">
+        <icon pos="[0,0" src="ICON_LOGO:22" />
+        <link pos="[6,0" maxWidth="100" colorText="#FF0000" class="cls_btn_weblink" dotted="1" href="www.leke.cn">前去清理</link>
+      </button>
+
+      <check pos="104,345" name="check_box31" colorText="#000000" font="face:微软雅黑">当个人文件夹大小超过</check>
+      <check pos="104,376" name="check_box32" colorText="#000000" font="face:微软雅黑">在系统右键菜单增加“通过QQ发送到我的手机及好友</check>
+      <window size="120,30" class="cls_edit" trackMouseEvent="1" pos="278,337">
+        <edit pos="5,8,@56,@18" colorBkgnd="#ffffff" name="edit_spin" margin-x="0" margin-y="0" />
+        <spinButton name="spin_btn1" pos="[0,6,@20,@24" max="1000000" min="0" value="1000" buddy="edit_spin">
+          <button name="btn_up" skin="skin_lcex_up" />
+          <button name="btn_down" skin="skin_lcex_down" />
+        </spinButton>
+      </window>
+      <text pos="370,345" font="face:微软雅黑" colorText="#000000">MB时，提醒我清理</text>
+    </page>
+
+    <page title="文件共享" tip="Share file">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">文件共享：</text>
+
+      <radio name="radio_n12" pos="98,32" colorText="#000000">开启文件共享功能</radio>
+      <radio name="radio_n13" pos="98,58" colorText="#000000">禁止文件共享功能（仅本次登录生效）</radio>
+      <radio name="radio_n14" pos="98,84" colorText="#000000">禁止文件共享功能</radio>
+
+      <check pos="98,116" name="check_box33" colorText="#000000" font="face:微软雅黑">不再接收文件共享提醒</check>
+    </page>
+    <page title="音视频通话" tip="Voice video call">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">音视频通话：</text>
+      <text pos="116,10" font="face:微软雅黑" colorText="#000000">麦克风：</text>
+      <combobox name="cbx_name2" size="130, 24" dropDown="1" dropHeight="150" dotted="0" animateTime="200" drawFocusRect="0" colorText="#000000ff" pos="184,8">
+        <liststyle itemHeight="24" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#228B22" colorItemSelBkgnd="#000088" />
+        <editstyle inset="5,0,5,0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+        <items>
+          <item id="0" text="没有录音设备" data="100" />
+          <item id="1" text="检测到录音设备" data="103" />
+        </items>
+      </combobox>
+      <text pos="116,43" font="face:微软雅黑" colorText="#000000">音量：</text>
+      <sliderbar size="128, 12" thumbInRail="0" alpha="200" width="200" value="20" min="0" max="100" pos="176,43" />
+
+      <check pos="116,70" name="check_box34" colorText="#000000" font="face:微软雅黑">自动调节麦克风音量</check>
+      <text pos="112,92" colorText="#A9A9A9">请点击麦克风测试，对着麦克风说话</text>
+      <button name="btn_name7" pos="112,118" size="88, 28" colorText="#000000" ani_in="skin.anim.mm1" ani_out="skin.anim.mm2">麦克风测试</button>
+      <img pos="[18,118,@166,@24" skin="skin_page_sound" tip="img tip" msgTransparent="0" show="1" />
+      <text pos="116,148" font="face:微软雅黑" colorText="#000000">扬声器：</text>
+      <combobox name="cbx_name3" size="150, 24" dropDown="1" dropHeight="150" dotted="0" animateTime="200" drawFocusRect="0" colorText="#000000ff" pos="184,148">
+        <liststyle itemHeight="24" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#228B22" colorItemSelBkgnd="#000088" />
+        <editstyle inset="5,0,5,0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+        <items>
+          <item id="0" text="window默认设备" data="100" />
+          <item id="1" text="扬声器" data="103" />
+          <item id="2" text="禁用" data="106" />
+        </items>
+      </combobox>
+      <text pos="116,176" font="face:微软雅黑" colorText="#000000">音量：</text>
+      <sliderbar size="128, 12" thumbInRail="0" alpha="200" width="200" value="20" min="0" max="100" pos="176,181" />
+      <text pos="112,199" colorText="#A9A9A9">请点击播放测试，试试能否听到声音</text>
+      <button name="btn_name8" pos="114,226" size="96,29" colorText="#000000" ani_in="skin.anim.mm1" ani_out="skin.anim.mm2">播放测试声音</button>
+      <img pos="[18,226,@166,@24" skin="skin_page_sound" tip="img tip" msgTransparent="0" show="1" />
+      <check pos="116,262" name="check_box35" colorText="#000000" font="face:微软雅黑">参加体验改善计划</check>
+      <text pos="112,286" colorText="#A9A9A9">为了提升网络连接质量，我们可能会通过QQ会</text>
+      <text pos="112,304" colorText="#A9A9A9">对你网络进行检测消耗流量不大于10MB。</text>
+      <text pos="116,326" font="face:微软雅黑" colorText="#000000">摄像头：</text>
+      <combobox name="cbx_name4" size="150, 24" dropDown="1" dropHeight="150" dotted="0" animateTime="200" drawFocusRect="0" colorText="#000000ff" pos="184,324">
+        <liststyle itemHeight="24" colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#228B22" colorItemSelBkgnd="#000088" />
+        <editstyle inset="5,0,5,0" colorText="#000000" align="left" colorBkgnd="#FFFFFF" />
+        <items>
+          <item id="0" text="没有安装摄像头" data="100" />
+          <item id="1" text="重新检测" data="103" />
+          <item id="2" text="检测完毕" data="106" />
+        </items>
+      </combobox>
+      <realwnd pos="188,356" size="144, 40" name="mysxt" wndclass="" id="" wndname="" colorBkgnd="#ffffff" />
+
+      <check pos="360,366" name="check_box36" colorText="#000000" font="face:微软雅黑">节省网络模式</check>
+      <button name="btn_name9" pos="152,404" size="96, 24" colorText="#000000" skin="_skin.sys.btn.normal">打开预览画面</button>
+      <button name="btn_name10" pos="264,404" size="80, 24" colorText="#000000" skin="_skin.sys.btn.normal">画质调节</button>
+      <text pos="116,433">拍照所得照片存储在：</text>
+      <realwnd pos="192,454" size="224, 20" colorText="#000000" colorBkgnd="#ffffff" />
+      <text pos="192,454,@224,@20" colorText="#000000">C:Documents\Tencent Files\1829427725\QQ\Photo\</text>
+      <button name="btn_save_ml1" pos="440,450" size="80, 24" colorText="#000000" skin="_skin.sys.btn.normal">更改目录</button>
+    </page>
+  </tabctrl>
+</include>

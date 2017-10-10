@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<include>
+  <tabctrl pos="0,0,-0,-0" font="style:StrokeAndFill,blurStyle:solid,blurRadius:3" animateSteps="10" animateType="1" tabAlign="left" tabInterSkin="skin_tab_left_splitter" tabInterSize="2" tabWidth="92" icon-x="5" icon-y="8" colorText="#000000bb">
+
+    <page title="密码" tip="Password">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">密码：</text>
+      <text pos="[10,[10" font="face:微软雅黑" colorText="#000000">您没有设置记住密码</text>
+      <button name="btn_name14" pos="90,[8,@99,@28">取消记住密码</button>
+      <text pos="78,[8" font="face:微软雅黑" colorText="#000000">为了您账户安全，请您定期修改密码并申请密码保护</text>
+      <button name="btn_name15" pos="90,[12,@88,@28">修改密码</button>
+      <button name="btn_name16" pos="[13,{,@99,@28">申请密码保护</button>
+      <text pos="78,[8" font="face:微软雅黑" colorText="#000000">某些服务将用到独立密码</text>
+      <button name="btn_name17" pos="90,[10,@99,@28">管理独立密码</button>
+    </page>
+
+    <page title="QQ锁" tip="QQ_lock">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">QQ锁：</text>
+      <radio name="radio_n15" pos="[5,[10" colorText="#000000">使用QQ密码解锁QQ锁</radio>
+      <radio name="radio_n16" pos="{,[10" colorText="#000000">使用QQ独立密码解锁QQ锁（QQ密码也可以）</radio>
+      <button name="btn_name18" pos="90,[12,@88,@28">更新热键</button>
+      <button name="btn_name19" pos="[13,{,@99,@28">自动锁定设置</button>
+    </page>
+    <page title="消息记录" tip="Message record">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">消息记录：</text>
+      <check pos="[5,[10" name="check_box37" colorText="#000000" font="face:微软雅黑">登录QQ时同步最近聊天记录</check>
+      <check pos="{,[10" name="check_box38" colorText="#000000" font="face:微软雅黑">仅查看本机消息</check>
+      <check pos="{,[10" name="check_box39" colorText="#000000" font="face:微软雅黑">退出QQ时自动删除所有消息记录</check>
+      <text pos="{,[10" font="face:微软雅黑" colorText="#000000">如果您需要删除个人或者某个群消息记录，请使用消息管理器</text>
+      <button name="btn_name20" pos="{,[10,@109,@28">打开消息管理器</button>
+      <text pos="{,[10" font="face:微软雅黑" colorText="#000000">您可以对消息记录按时间段删除</text>
+      <button name="btn_tree21" pos="{,[10,@99,@28">删除消息记录</button>
+      <check pos="{,[10" name="check_box40" colorText="#000000" font="face:微软雅黑">启用消息记录加密</check>
+    </page>
+    <page title="安全推荐" tip="Safe recommended">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">安全推荐：</text>
+      <check pos="[5,[10" name="check_box41" colorText="#000000" font="face:微软雅黑">使用QQ浏览器打开QQ链接</check>
+      <text pos="{,76" font="face:微软雅黑" colorText="#000000">建议</text>
+      <link pos="[3,{" maxWidth="100" colorText="#FF0000" class="cls_btn_weblink" dotted="1" href="www.leke.cn">安装QQ浏览器,</link>
+      <text pos="[8,{" font="face:微软雅黑" colorText="#000000">增强访问网络安全性</text>
+    </page>
+    <page title="安全更新" tip="Safe update">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">安全更新：</text>
+      <text pos="[10,[10" font="face:微软雅黑" colorText="#000000">安全模块的更新，可保障您的QQ使用安全</text>
+      <radio name="radio_n17" colorText="#000000" pos="{,[10">有安全更新时自动为我安装，无需提醒（推荐）</radio>
+      <radio name="radio_n18" colorText="#000000" pos="{,[10">有安全更新时提醒我，不自动安装</radio>
+    </page>
+    <page title="安全防护" tip="Safe protect">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">安全防护：</text>
+      <text pos="[10,[10" font="face:微软雅黑" colorText="#000000">浏览器防钓鱼功能，为您有效拦截恶意钓鱼网站</text>
+      <radio name="radio_n19" colorText="#000000" pos="{,[10">启用（仅支持IE）</radio>
+      <radio name="radio_n20" colorText="#000000" pos="{,[10">禁用</radio>
+    </page>
+    <page title="文件传输" tip="Send file">
+      <text pos="20,10" font="face:微软雅黑,adding:1" colorText="#FF0000">文件传输：</text>
+      <radio name="radio_n21" colorText="#000000" pos="88,[10">安全级-高</radio>
+      <text pos="{,[5" font="face:微软雅黑" colorText="#A9A9A9">阻止接收任何文件</text>
+      <radio name="radio_n22" colorText="#000000" pos="{,[10">安全级-中（推荐）</radio>
+      <text pos="{,[5" font="face:微软雅黑" colorText="#A9A9A9">组织接收高风险文件（少数常用类型的文件除外）</text>
+      <radio name="radio_n23" colorText="#000000" pos="{,[10">安全级-低</radio>
+      <text pos="{,[5" font="face:微软雅黑" colorText="#A9A9A9">允许接收任何文件</text>
+    </page>
+  </tabctrl>
+</include>

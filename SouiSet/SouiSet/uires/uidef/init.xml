@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIDEF>
+  <font face="微软雅黑" size="15" colorText="#ffffff"/>
+
+  <string>
+    <title value=" QQ设置V1.0"/>
+    <ver value="1.0"/>
+  </string>
+
+  <skin>
+    <imglist name="_skin.bg" src="PNG:ID_PNG_BG"/>
+    <imgframe name="_skin.shadow" src="PNG:ID_PNG_SHADOW" left="5" top="3" right="5" bottom="7"/>
+    <imglist name="_skin.btn.close" src="PNG:ID_SYS_BTN_CLOSE" states="3" />
+    <imglist name="_skin.btn.restore" src="PNG:ID_SYS_BTN_RESTORE" states="3" />
+    <imglist name="_skin.btn.min" src="PNG:ID_SYS_BTN_MIN" states="3" />
+    <imglist name="_skin.white.bg" src="PNG:ID_WHITE_BG"  alpha="255"/>
+    <imglist name="_skin.ver.line" src="PNG:ID_SKIN_VER_LINE" />
+    <imglist name="_skin.hor.line" src="PNG:ID_SKIN_HOR_LINE" />
+
+
+    <imglist name="skin.subtab.bg" src="PNG:ID_SUBTAB_BG" states="1" tile="0" margin="1,1,1,1" />
+    <imglist name="skin.subtab.btn" src="PNG:ID_SUBTAB_BTN" states="3" margin="1,1,1,1" />
+    <imglist name="skin.subtab.split" src="PNG:ID_SUBTAB_SPLIT" states="1" margin="1,1,1,1"/>
+
+
+    <imglist name="skin_tab_left_splitter" src="imgx:png_tab_left_splitter"/>
+    <imglist name="skin_tab_main" src="imgx:png_tab_main" states="3"/>
+    
+
+    <imgframe name="skin_lcex_header" src="imgx:png_lcex_header" states="4" margin-x="2" margin-y="2"/>
+    <imgframe name="skin_lcex_header_arrow" src="imgx:png_lcex_header_arrow" states="1" margin-x="0.1" margin-y="0.1"/>
+    <imgframe name="skin_lcex_up" src="imgx:png_lcex_up" states="1" margin-x="0.1" margin-y="0.1"/>
+    <imgframe name="skin_lcex_down" src="imgx:png_lcex_down" states="1" margin-x="0.1" margin-y="0.1"/>
+    <imgframe name="skin_lcex_selectrange" src="imgx:png_lcex_selectrange" margin-x="1" margin-y="1"/>
+
+    <imgframe name="skin_item_bk" src="imgx:png_img_bk" states="3" margin="3,3,3,3"/>
+    <imgframe name="skin_page_sound" src="imgx:png_page_sound"/>
+    <imgframe name="skin_page_sxt" src="imgx:png_page_sxt"/>
+  </skin>
+
+  <style>
+    <class name="cls_title" colorText="#ffffff" font="face:微软雅黑,bold:1,size:13" />
+    <class name="font:bold" colorText="#000000" font="face:微软雅黑,bold:1,size:13" />
+    <class name="font:label" colorText="#000000" font="face:微软雅黑,bold:0,size:13" />
+    <class name="normalbtn" font="" colorText="#385e8b" colorTextDisable="#91a7c0" textMode="0x25" cursor="hand" margin-x="0"/>
+  </style>
+
+  <objattr>
+  </objattr>
+</UIDEF>

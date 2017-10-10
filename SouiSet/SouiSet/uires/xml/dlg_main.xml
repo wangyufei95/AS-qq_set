@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<SOUI name="dlg_main" title="QQ设置中心[SOUI]" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="800" height="568" margin="20,5,5,5" resizable="0" wndType="appMain" appWnd="1" translucent="1">
+  <root skin="_skin.sys.wnd.bkgnd" cache="1">
+    <window pos="5,3,-5,-7" skin="_skin.bg" show="1">
+      <caption pos="0,0,-0,@30" show="1" font="adding:0">
+        <icon pos="10,8" src="ICON_LOGO:22" />
+        <text pos="[8,8" colorText="#ff000">高仿QQ设置V1.0</text>
+        <imgbtn name="btn_close" skin="_skin.sys.btn.close" pos="-45,0" tip="close" animate="1" />
+        <imgbtn name="btn_min" skin="_skin.sys.btn.minimize" pos="-83,0" tip="small" animate="1" />
+      </caption>
+      <!--<tabctrl2 name="tab_main" pos="0,[0,-0,-0" font="face:微软雅黑,adding:-2" colorBkgnd="#ffffff" tabPos="10" tabAlign="top" colorText="#ffffff" show="1" curSel="0" focusable="0" tabHeight="75" tabSkin="_skin.tab.main" iconSkin="_skin.tab.icon" text-y="50" icon-x="12" tabInterSize="5">-->
+      <tabctrl pos="0,[,-0,-0" name="tabctrl" colorBkgnd="#D3D3D3">
+        <page title="基础设置" tip="Set base" interval="50">
+          <include src="layout:page_baseset" />
+        </page>
+        <page title="安全设置" tip="Set safe" interval="50">
+          <include src="layout:page_safeset" />
+        </page>
+        <page title="权限设置" tip="Set power" interval="50">
+          <include src="layout:page_powerset" />
+        </page>
+      </tabctrl>
+      <edit tip="搜索" pos="640,32" colorBkgnd="#228B22" size="150, 24" cueText="search" colorText="#000000">
+        <icon pos="[130,5,@18,@16" src="ICON_SEARCH:16" />
+      </edit>
+    </window>
+  </root>
+</SOUI>
